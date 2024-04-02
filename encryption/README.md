@@ -9,6 +9,7 @@ Create a `key` directory int root folder
     
     mkdir key
     cd key
+#### Note: if using OpenSSL 3.0, can use the -traditional switch to get the older format for output, both for the openssl genrsa and openssl rsa subcommands. 
 Generate 2048 bit RSA Key
 
     openssl genrsa -des3 -out private.pem 2048

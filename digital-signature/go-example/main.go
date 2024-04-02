@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	params := `{}`
-	privKeyStr, err := ioutil.ReadFile("./key/priv.pem")
+	params := `{ "client_id": "partnerclientid", "client_secret": "partnerclientsecret", "timestamp": "2021-12-12 12:12:12" }`
+	privKeyStr, err := ioutil.ReadFile("../../key/priv.pem")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -20,7 +20,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	pubKeyStr, err := ioutil.ReadFile("./key/pub.pem")
+	pubKeyStr, err := ioutil.ReadFile("../../key/pub.pem")
 	if err != nil {
 		log.Fatal(err)
 	}

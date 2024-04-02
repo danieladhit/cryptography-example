@@ -67,7 +67,7 @@ func Decrypt(privKey *rsa.PrivateKey, message []byte, encryptedKey string) ([]by
 
 func main() {
 	// Read private key
-	privKeyStr, err := ioutil.ReadFile("../key/priv.pem")
+	privKeyStr, err := ioutil.ReadFile("../../key/priv.pem")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -79,7 +79,7 @@ func main() {
 	}
 
 	// Read public key
-	pubKeyStr, err := ioutil.ReadFile("../key/pub.pem")
+	pubKeyStr, err := ioutil.ReadFile("../../key/pub.pem")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -91,7 +91,8 @@ func main() {
 	}
 
 	// Payload
-	payload := `{"name":"john-doe", "method":"hello-world", "value":"lorem-ipsum"}`
+	//payload := `{"name":"john-doe", "method":"hello-world", "value":"lorem-ipsum"}`
+	payload := `{ "client_id": "partnerclientid", "client_secret": "partnerclientsecret", "timestamp": "2021-12-12 12:12:12" }`
 
 	// Encryption
 	encPayload, encKey, err := Encrypt(pubKey, []byte(payload))
