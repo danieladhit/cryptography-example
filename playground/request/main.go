@@ -22,14 +22,14 @@ type SignedData struct {
 }
 
 const (
-	JSON_GET_TOKEN    = "get_token.json"
-	JSON_HEALTH_CHECK = "health_check.json"
-	JSON_GET_OFFER    = "get_offer.json"
-	JSON_PAYMENT      = "payment.json"
+	JSON_GET_TOKEN    = "req_get_token.json"
+	JSON_HEALTH_CHECK = "req_health_check.json"
+	JSON_GET_OFFER    = "req_get_offer.json"
+	JSON_PAYMENT      = "req_payment.json"
 )
 
 const (
-	SELECTED_PAYLOAD = JSON_GET_TOKEN
+	SELECTED_PAYLOAD = JSON_PAYMENT
 )
 
 func main() {

@@ -1,0 +1,14 @@
+{
+  "ref_id": "11242905512",
+  "partner_inquiry_id": "11242905512",
+  "client_number": "6285156694052",
+  "category": "topup",
+  "rsid": "TOKOPEDIA",
+  "product_code": "51009",
+  "total_amount": 4099,
+  "timestamp": "2024-04-19 15:12:12",
+  "additional_parameter": [
+    { "name": "room", "value": "studio" },
+    { "name": "month", "value": "5" }
+  ]
+}

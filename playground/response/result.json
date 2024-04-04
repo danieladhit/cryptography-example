@@ -1,5 +1,13 @@
 {
   "response_code": "00",
   "message": "Success",
-  "timestamp": "2024-04-04 14:40:06"
+  "ref_id": "11242905512",
+  "partner_ref_id": "TKPD-1712218047941668",
+  "client_number": "6285156694052",
+  "product_code": "51009",
+  "admin_fee": "0",
+  "total_amount": 4099,
+  "timestamp": "",
+  "bill_count": "0",
+  "bill_details": null
 }
