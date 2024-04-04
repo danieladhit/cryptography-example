@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	params := `{ "client_id": "partnerclientid", "client_secret": "partnerclientsecret", "timestamp": "2021-12-12 12:12:12" }`
+	params := `{"client_id": "tokopedia", "client_secret": "JvOL0Pz9hVbPzfRP5JF6Ipj", "timestamp": "2024-01-30 07:02:00"}`
 	privKeyStr, err := ioutil.ReadFile("../../key/priv.pem")
 	if err != nil {
 		log.Fatal(err)
