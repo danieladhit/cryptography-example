@@ -26,10 +26,11 @@ const (
 	JSON_HEALTH_CHECK = "req_health_check.json"
 	JSON_GET_OFFER    = "req_get_offer.json"
 	JSON_PAYMENT      = "req_payment.json"
+	JSON_STATUS       = "req_check_status.json"
 )
 
 const (
-	SELECTED_PAYLOAD = JSON_PAYMENT
+	SELECTED_PAYLOAD = JSON_STATUS
 )
 
 func main() {
